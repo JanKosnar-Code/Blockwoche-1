@@ -4,18 +4,18 @@ public class Programm
 {
     static void Main()
     {
-        int Zahl;
+        // Es gibt Folgende Vergleichsoperatoren:
 
-        Console.WriteLine("Gib eine Zahl ein: ");
-        Zahl = Convert.ToInt32(Console.ReadLine());
+        // > größer
+        // < kleiner
+        // <= kleiner gleich
+        // >= größer gleich
+        // != nicht gleich
+        // == gleich
 
-        if(Zahl % 2 > 0)
-        {
-            Console.WriteLine("Ist nicht durch 2 Teilbar");
-        }
-        else
-        {
-            Console.WriteLine("Ist durch 2 Teilbar");
-        }
+        // Und Folgende Logische Operatoren:
+
+        // && logisches und
+        // || logisches oder
     }
 }
