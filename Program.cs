@@ -4,27 +4,15 @@ public class Programm
 {
     static void Main()
     {
-        int zahl;
-        string a = "";
-        string b = "";
+        int age = 10;
 
-        Console.WriteLine("Gib eine Zahl ein: ");
-        zahl = Convert.ToInt32(Console.ReadLine());
-
-        if (zahl % 3 == 0)
+        switch(age) // switch ist das selbe wie ff/else aber es ist praktischer alls if/else bei repetetiven sachen
         {
-            a = "FIZZ";
-        }
-
-        if (zahl % 5 == 0)
-        {
-            b = "BUZZ";
-        }
-        Console.WriteLine(a + b);
-
-        if (a != "FIZZ" && b != "BUZZ")
-        {
-            Console.WriteLine(zahl);
+            case int n when (n > 0 && n < 10): Console.WriteLine(); break;
+            case int n when (n > 10 && n < 20): Console.WriteLine(); break;
+            case int n when (n > 20 && n < 30): Console.WriteLine(); break;
+            case int n when (n > 30 && n < 40): Console.WriteLine(); break;
+            default: Console.WriteLine(); break;
         }
     }
 }
