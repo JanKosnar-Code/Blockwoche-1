@@ -4,19 +4,21 @@ public class Programm
 {
     static void Main()
     {
+        // Variablen
+
+        string? name;
         int age;
+
+        // Abfragen
+
+        Console.WriteLine("Was ist dein name?: ");
+        name = Console.ReadLine();
+
         Console.WriteLine("Wie alt bist du?: ");
-        age = Console.ReadLine(); // Hier ist ein Fehler weil Readline standardmäsig ein String ist
-        Console.WriteLine(age);
+        age = Convert.ToInt32(Console.ReadLine());
 
-        int age2;
-        Console.WriteLine("Wie alt bist du?: ");
-        age2 = Convert.ToInt32(Console.ReadLine()); // Hier wird Console Writeline zu Int umgewandelt mit 32 Bit
-        Console.WriteLine(age2);
+        age += 30; // +30 Zu Alter
 
-        // das rechnen funktioniert mit allen rechenarten
-
-        age = age + 5; // rechnet dem alter 5 dazu
-        age += 5; // das selbe aber kürzer
+        Console.WriteLine($"Hallo {name}. in 30 Jahren bist du {age}."); // Ausgabe
     }
 }
