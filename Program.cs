@@ -4,18 +4,22 @@ public class Programm
 {
     static void Main()
     {
-        // Es gibt Folgende Vergleichsoperatoren:
+        int age;
 
-        // > größer
-        // < kleiner
-        // <= kleiner gleich
-        // >= größer gleich
-        // != nicht gleich
-        // == gleich
+        bool a;
 
-        // Und Folgende Logische Operatoren:
+        Console.WriteLine("Wie alt bist du?: ");
+        age = Convert.ToInt32(Console.ReadLine());
 
-        // && logisches und
-        // || logisches oder
+        a = age >= 18;
+
+        if (a)
+        {
+            Console.WriteLine("Du darfst rein.");
+        }
+        else
+        {
+            Console.WriteLine("Du bist zu Jung");
+        }
     }
 }
