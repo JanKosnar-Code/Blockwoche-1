@@ -6,19 +6,19 @@ public class Programm
     {
         // Variablen
 
-        string? name;
-        int age;
+        int zahl1;
+        int zahl2;
+        int Ergebnis;
 
-        // Abfragen
+        // Eingabe
 
-        Console.WriteLine("Was ist dein name?: ");
-        name = Console.ReadLine();
+        Console.WriteLine("Erste Zahl");
+        zahl1 = Convert.ToInt32(Console.ReadLine());
+        Console.WriteLine("Zweite Zahl");
+        zahl2 = Convert.ToInt32(Console.ReadLine());
 
-        Console.WriteLine("Wie alt bist du?: ");
-        age = Convert.ToInt32(Console.ReadLine());
+        Ergebnis = zahl1 + zahl2; // Rechnet
 
-        age += 30; // +30 Zu Alter
-
-        Console.WriteLine($"Hallo {name}. in 30 Jahren bist du {age}."); // Ausgabe
+        Console.WriteLine(Ergebnis); // Ausgabe
     }
 }
