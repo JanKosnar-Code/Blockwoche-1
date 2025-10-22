@@ -24,6 +24,7 @@ public class Programm
             case '-': Ergebnis1 = zahl1 - zahl2; Console.WriteLine(Ergebnis1); break;
             case '*': Ergebnis1 = zahl1 * zahl2; Console.WriteLine(Ergebnis1); break;
             case ':': Ergebnis1 = zahl1 / zahl2; Ergebnis2 = zahl1 % zahl2; Console.WriteLine(Ergebnis1 + " " + Ergebnis2); break;
+            default: Console.WriteLine(""); break;
         }
     }
 }
