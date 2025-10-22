@@ -4,22 +4,27 @@ public class Programm
 {
     static void Main()
     {
-        int age;
+        int zahl;
+        string a = "";
+        string b = "";
 
-        bool a;
+        Console.WriteLine("Gib eine Zahl ein: ");
+        zahl = Convert.ToInt32(Console.ReadLine());
 
-        Console.WriteLine("Wie alt bist du?: ");
-        age = Convert.ToInt32(Console.ReadLine());
-
-        a = age >= 18;
-
-        if (a)
+        if (zahl % 3 == 0)
         {
-            Console.WriteLine("Du darfst rein.");
+            a = "FIZZ";
         }
-        else
+
+        if (zahl % 5 == 0)
         {
-            Console.WriteLine("Du bist zu Jung");
+            b = "BUZZ";
+        }
+        Console.WriteLine(a + b);
+
+        if (a != "FIZZ" && b != "BUZZ")
+        {
+            Console.WriteLine(zahl);
         }
     }
 }
