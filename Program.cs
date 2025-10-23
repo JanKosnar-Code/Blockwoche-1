@@ -19,7 +19,7 @@ public class Programm
         Console.WriteLine("Gib eine die zahl ein durch die geteilt wird: ");
         rzahl = Convert.ToInt32(Console.ReadLine());
 
-        while (checker)
+        do
         {
             zwischen = i % rzahl;
 
@@ -39,5 +39,6 @@ public class Programm
 
             i++;
         }
+        while (checker);
     }
 }
