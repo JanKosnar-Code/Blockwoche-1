@@ -5,22 +5,32 @@ public class Programm
 {
     static void Main()
     {
-        string? name;
+        string? wort;
+        string zwischen1 = "";
+        string zwischen2 = "";
 
-        int counter = 0;
+        Console.WriteLine("Gib ein Wort ein: ");
+        wort = Console.ReadLine();
 
-        Console.WriteLine("Gib deinen Namen ein: ");
-        name = Console.ReadLine();
-
-        int number = name.Length;
-
-        Console.WriteLine($"Dein Name hat {number} buchstaben.");
-
-        for (int i = 1; i <= number; i++)
+        foreach (char c in wort!.ToLower())
         {
-            Console.WriteLine($"Rechenschritt:{counter} + {i} = {counter + i}");
-            counter += i;
+            zwischen1 += c;
         }
-        Console.WriteLine(counter);
+
+        foreach (char c in wort.ToLower().Reverse())
+        {
+            zwischen2 += c;
+        }
+
+        Console.WriteLine(zwischen1 + " " + zwischen2);
+
+        if (zwischen1 == zwischen2)
+        {
+            Console.WriteLine("Es Ist Richtig");
+        }
+        else
+        {
+            Console.WriteLine("Es Ist Falsch");
+        }
     }
 }
