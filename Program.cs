@@ -5,40 +5,22 @@ public class Programm
 {
     static void Main()
     {
-        int i = 1;
+        string? name;
 
-        int rzahl;
-        int zahl;
-        int zwischen;
+        int counter = 0;
 
-        bool checker = true;
+        Console.WriteLine("Gib deinen Namen ein: ");
+        name = Console.ReadLine();
 
-        Console.WriteLine("Gib eine zahl ein: ");
-        zahl = Convert.ToInt32(Console.ReadLine());
+        int number = name.Length;
 
-        Console.WriteLine("Gib eine die zahl ein durch die geteilt wird: ");
-        rzahl = Convert.ToInt32(Console.ReadLine());
+        Console.WriteLine($"Dein Name hat {number} buchstaben.");
 
-        do
+        for (int i = 1; i <= number; i++)
         {
-            zwischen = i % rzahl;
-
-            if (zwischen > 0)
-            {
-                Console.WriteLine(i);
-            }
-            else
-            {
-                Console.WriteLine($"Die zahl {i} ist durch {rzahl} teilbar!");
-            }
-
-            if (i == zahl)
-            {
-                checker = false;
-            }
-
-            i++;
+            Console.WriteLine($"Rechenschritt:{counter} + {i} = {counter + i}");
+            counter += i;
         }
-        while (checker);
+        Console.WriteLine(counter);
     }
 }
